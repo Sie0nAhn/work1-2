@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+         ;font-weight: 400;
+        font-family: ;font-style: normal;
+        }
+       @font-face {
+    font-family: 'Pretendard-extrabold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff2') format('woff2'), /* woff2 포맷 추가 */
+         url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal; /* 기본 폰트 스타일은 normal로 지정합니다. */
+}
+ @font-face {
+    font-family: 'Pretendard-black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff2') format('woff2'), /* woff2 포맷 추가 */
+         url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'Pretendard-bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+        
+        header { padding-top: 10vw; padding-bottom: 0vw; position: relative; }
+        footer { padding-top: 10px; padding-bottom: 100px; }
+        section { padding-top: 0px; padding-bottom: 0px; }
+
+        html { font-family: 'Pretendard-Regular'; line-height: 1.5; }
+
+        body, h1, h2, h3, h4, p { margin: 0; }
+        body, ul { margin: 0; padding: 0; }
+        nav { background: magenta; color: greenyellow; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .wrap { width: 600px; margin: auto; }
+        .flex { display: flex; justify-content: space-between; }
+        .menu { width: 400px; }
+        .menu li { list-style-type: none; }
+        .menu li a { display: block; padding: 10px 20px; text-decoration: none; color: white; }
+        .menu li a:hover { background: black; color: white; }
+        .logo { line-height: 45px; }
+        .black { background: black;}
+   section.black hr {
+    border-color: white !important;
+    display: block; /* hr 요소를 보이도록 설정합니다. */
+    width: 100%; /* hr 요소가 부모 요소의 가로폭을 가득 채우도록 설정합니다. */
+}
+
+.snow{background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjN3ejhnZml0bWd1Mzllc3pxM2sxYWVtNXd0NHJiMG9qdWlwb3lsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jobh7TG1ZkrdpCUEGM/giphy.gif);
+    background-attachment: fixed;
+            background-position: center top -70vh;
+            position: relative;
+            z-index: 0;
+            padding-bottom: 50vw;}
+        .party {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGRuY2hwM3NlMTl4NDltYmVqcWEyYzVxM3hvb3hhNzBxenFxNGJlOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YUGHxgq4L7hSlslwPY/giphy.gif');
+            background-size:150%;
+            background-attachment: fixed;
+            background-position: center top -70vh;
+            position: relative;
+            z-index: 0;
+            padding-bottom: 50vw;
+        }
+
+        .party h4 { color: magenta; position: absolute; top: 40%; left: 50%; transform: translateX(-50%); }
+        h2 {font-family: 'Pretendard-extrabold'; font-weight: 800; font-size: 4.5vw; padding-top: 0px; padding-bottom: 0px; }
+        h3 { font-family: 'Pretendard-extrabold';font-size: 5vw; padding-top: 0px; padding-bottom: 2px; }
+
+        h4 { font-family: 'Pretendard-bold'; font-size: 2vw; }
+         h5 { font-family: 'Pretendard-bold'; font-size: 3.5vw; }
+         h6 { font-family: 'Pretendard-bold'; font-size: 1.6vw; color:megenta }
+        p { font-family: 'Pretendard-Regular'; font-size: 1.5rem; padding-top: 2vw; padding-bottom: 5vw; 
+    text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+    padding-left: 0; /* 왼쪽 여백을 없앱니다. */}
+   
+   .FRAME-0{width:40vw;height:3vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+
+.TEXT-1{width:40vw;height:12vw;left:3vw;top:1vw;position:static;margin-top:1vw;margin-left:3vw;z-index:1;color:#FFFFFF;font-size:2vw;font-weight:500;font-family:Pretendard;line-height:1.5;text-align:center;white-space:nowrap;display:flex}
+
+@media (min-width: 600px) {
+.FRAME-0{width:30vw;height:5vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+.right-spacing{margin-right: 100px;}
+
+.FRAME-1{width:24vw;height:5vw;overflow:hidden;background:#000000 ;display:flex;flex-direction:column}
+
+.TEXT-2{width:24vw;height:15vw;left:3vw;top:1vw;position:static;margin-top:1vw;margin-left:3vw;z-index:1;color:#FFFFFF;font-size:2vw;font-weight:500;font-family:Pretendard;line-height:1.5;text-align:center;white-space:nowrap;display:flex}
+
+@media (min-width: 600px) {
+.FRAME-1{width:25vw;height:5vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+.right-spacing{margin-right: 100px;}
+
+.FRAME-2{width:28vw;height:5vw;overflow:hidden;background:#white!important;;display:flex;flex-direction:column}
+
+.TEXT-3{width:28vw;height:12vw;left:3vw;top:1vw;position:static;margin-top:1vw;margin-left:3vw;z-index:1;color:#black!important;;font-size:2vw;font-weight:500;font-family:Pretendard;line-height:1.5;text-align:center;white-space:nowrap;display:flex}
+
+@media (min-width: 600px) {
+.FRAME-2{width:28vw;height:5vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+
+.right-spacing{margin-right: 100px;}
+.FRAME-3{width:21vw;height:5vw;overflow:hidden;background:#white!important;;display:flex;flex-direction:column}
+
+.TEXT-4{width:21vw;height:12vw;left:3vw;top:1vw;position:static;margin-top:1vw;margin-left:3vw;z-index:1;color:#black!important;;font-size:2vw;font-weight:500;font-family:Pretendard;line-height:1.5;text-align:center;white-space:nowrap;display:flex}
+
+@media (min-width: 600px) {
+.FRAME-3{width:21vw;height:5vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+
+.right-spacing{margin-right: 100px;}
+.FRAME-4{width:23vw;height:5vw;overflow:hidden;background:#white!important;;display:flex;flex-direction:column}
+
+.TEXT-5{width:23vw;height:12vw;left:3vw;top:1vw;position:static;margin-top:1vw;margin-left:3vw;z-index:1;color:#black!important;;font-size:2vw;font-weight:500;font-family:Pretendard;line-height:1.5;text-align:center;white-space:nowrap;display:flex}
+
+@media (min-width: 600px) {
+.FRAME-4{width:23vw;height:5vw;overflow:hidden;background:#000000;display:flex;flex-direction:column}
+
+.right-spacing{margin-right: 100px;}
+
+
+.container {
+            display: flex;
+            flex-direction: row; /* 가로 방향으로 정렬합니다. */
+            align-items: baseline; /* 텍스트 기준선에 맞춥니다. */
+            position: relative; /* 부모 요소를 상대 위치로 설정합니다. */
+        }
+        .paragraph, h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .bottom-aligned {
+            position: absolute; /* 절대 위치로 설정합니다. */
+            left: 84vw; /* 원하는 위치로 이동합니다. */
+        }
+        /* 나는 문장을 감싸는 div 요소의 margin-top을 조정하여 위로 올립니다. */
+        .paragraph-wrapper {
+            margin-top: -8vw; /* 원하는 만큼 위로 올립니다. */
+
+    .image-container img {
+    width: 100%;
+    display: block;
+}
+
+.image-container h4 {
+    position: absolute;
+    bottom: 170px;
+    left: 50%; 
+    transform: translateX(-60%); 
+    padding: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row; /* 가로 방향으로 정렬합니다. */
+    align-items: baseline; /* 텍스트 기준선에 맞춥니다. */
+    position: relative; /* 부모 요소를 상대 위치로 설정합니다. */
+}
+
+.left-content {
+    flex: 1; /* 왼쪽 컨텐츠가 오른쪽보다 더 크게 확장됩니다. */
+    padding-right: 20px; /* 이미지와 문장 사이의 간격을 설정합니다. */
+}
+.right-content {
+    flex: 1; /* 왼쪽 컨텐츠가 오른쪽보다 더 크게 확장됩니다. */
+    padding-right: 20px; padding-bottom: -500px;/* 이미지와 문장 사이의 간격을 설정합니다. */
+
+.image-container1 {
+    width: 50%; /* 이미지 컨테이너의 너비를 조절합니다. */
+    margin-top: 50px; /* 이미지 위 여백을 설정합니다. */
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.image-container1 img {
+    width: 100%;
+    display: block;
+}
+
+.image-container1 h4 {
+    padding: 10px;
+    text-align: center; /* 가운데 정렬합니다. */
+}
+
+}
+.subway-image {
+    width: 100%;
+    display: block;
+}
+.snow .image-container1 {
+    max-height: 200px; /* 원하는 높이로 이미지 컨테이너의 최대 높이를 설정합니다. */
+    overflow: hidden; /* 내용이 넘칠 경우를 대비하여 오버플로우를 숨깁니다. */
+}
+
+.snow .image-container1 img {
+    width: 100%; /* 이미지를 컨테이너의 너비에 맞게 조정합니다. */
+    height: auto; /* 이미지의 높이를 자동으로 조정하여 원래 비율을 유지합니다. */
+}
+.snow h3 {
+    margin-bottom: 5px; /* h3 태그 아래쪽 마진을 줄입니다. */
+}
+
+.snow p {
+    margin-top: 5px; /* p 태그 위쪽 마진을 줄입니다. */
+}
+.snow hr {
+    border-color: white; /* 라인의 색상을 흰색으로 설정합니다. */
+    border-style: solid; /* 라인의 스타일을 실선으로 설정합니다. */
+    border-width: 5px 0 0 0; /* 라인의 두께를 조절합니다. */
+}
+
+.snow .image-container img {
+    width: 100%; /* 이미지의 너비를 조정합니다. */
+    display: block;
+}
+
+
+
+
+    </style>
+    <title>세상에 이런일이!</title>
+</head>
+<body>
+    <nav>
+        <div class="wrap flex">
+            <div class="logo">😇세상에 이런일이!😇 </div>
+            <ul class="menu flex">
+                <li><a href="#home">home</a></li>
+                <li><a href="#stone">stone</a></li>
+                <li><a href="#snowman">snowman</a></li>
+                <li><a href="#poor">poor</a></li>
+            </ul>
+        </div>
+    </nav>
+  <header class="center-spacing party" id="home"style= "color: magenta;">
+    <img src="logo.png" style="position: absolute; top: 46%; left: 53%; transform: translate(-50%, -50%); z-index: 1; background-attachment: fixed;">
+    <h6 style="color: megenta; position: absolute; top: calc(20% - 1.5vw); left: 51%; transform: translateX(-60%);">이것만 피하면 당신의 여행은 안전하다!</h4>
+</header>
+
+<section id="stone" style="display: flex; justify-content: space-between;padding-top: 200px;">
+    <h2 style="padding-left: 100px;">
+        마른 하늘 아래에 돌맞기
+    </h2>
+    <div style="position: relative;">
+        <h2 style="padding-right: 100px;"> 
+            stone
+        </h2>
+        <hr style="border: none; border-top: 5px solid black; position: absolute; top: 100%; left: 50%; transform: translateX(-97%); width: calc(810% - 1000px);">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ25lc3NhcGR2NHdrM2M0MGZqYXZvdHFyeTc2eHE0ajhlbG54aTh2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ElBsC0qfUQAWc7DbbJ/giphy.gif" style="position: absolute; top: calc(100% + 60px); left: -180%; transform: translateX(-50%);padding-bottom: 200px; width: 200%; height: 400%;">
+    </div>
+      
+</section>
+
+
+<section style="padding-top: 600px;padding-bottom: 0;">
+<div style="padding-left: 50vw;">
+    <div class="right-spacing">
+        <div class="FRAME-0" >
+  <span class="TEXT-1" >
+    지하철에서 놀이기구 타는 법
+  </span>
+</div>
+        <p> 
+            때는 내가 11살, 초등학생 시절이다. <br>프랑스에 사시던 이모의 덕으로 초등학교 당시 매해 여름에는 프랑스에서 방학을 보내곤 했다. 이날은 유독 날씨가 참 좋아서 사촌동생들을 이끌고 퐁피듀 센터로 가는 길이었다. <br>지하철에서 지금은 어떤지는 모르겠지만, 당시 프랑스 지하철은 무궁화 기차처럼 2-2 형태로 의자가 앞뒤로 마주보고 앉을 수 있는 구조였다. 지하철에서 동생들과 마주보고 앉아 대화를 나누고 있었는데, 갑자기 한 백인 여성이 우리쪽으로 다가왔다. <br>금발에 푸른 눈을 가진 그녀는 나를 흘끗보더니 통로쪽에 앉아있던 나를 확 미시더니 창가쪽으로 몸을 밀었다.</p></div></div>
+        <div><h3 style="padding-left:12vw;"> 쭈</h3>
+            <h3 style="padding-left:24vw;">우</h3>
+            <h3 style="padding-left:36vw;">우</h3>
+            <h3 style="padding-left:48vw;">우</h3>
+            <h3 style="padding-left:60vw;">우</h3>
+            <h3 style="padding-left:72vw;">우</h3>
+       <div class="container">
+        <!-- "나는" 문장과 "욱"을 같은 줄에 배치합니다. -->
+        <div class="paragraph-wrapper">
+            <p style="padding-left:12vw; margin-right: 2vw;">
+                나는 <br />
+                슬라이딩 되듯이<br />
+                창가로 미끄러졌고, 갑작스런 밀침에 <br />
+                머리를 창문에 박았다. 백인 여성은 그런 나를 <br />
+                흘끗 보시곤 묵묵히 책을 읽기 시작했다.
+            </p>
+        </div>
+        <!-- 욱의 위치를 조정합니다. -->
+        <h3 class="bottom-aligned">욱</h3>
+    </div></div></section>
+ <section>
+    <div class="container">
+        <div class="left-content" style="padding-left:12vw; ;padding-bottom: 300px;">
+            <div style="padding-top: -1500px">
+            <div class="FRAME-1">
+                    <span class="TEXT-1">
+                        지하철에서 추격전하기
+                    </span></div></div>
+            <div class="right-spacing">
+                <p style="">
+                    나는 굉장히 당황했지만, 어린 내 나이 때문에 나보다 나이도 많은 사람들에게 화를 낼 수 없어 그저 묵묵히 Rambuteau역까지 20분을 타고 갔다. <br>
+                    역에 도착하자 여성을 피해 후다닥 일어난 우리는 centre Georges Pompidou 출구로 걸어갔다. 
+                    걸어가는 와중에 먼가 뒤로 소름이 끼쳤다. 뒤를 돌아보자, 아까 옆자리에 앉았던 백인 여성이 자신의 친구들과 함께 우리를 노려보며 걸어오고 있었다. <br>
+                    놀란 나는 동생들을 데리고 전력질주를 하게 되었고 출구로 재빠르게 계단을 올랐다. <br>
+                    그러던 그 때, <br><br>
+                    그 순간 뒤에서는 돌이 날아왔다. 
+                    <br><br>날라온 돌은 내가 앞앞 계단으로 떨어졌고, 다행히 나는 맞지 않았다. 우리를 보며 동양인 비하 발언을 시끄럽게 하던 그들을 뒤로한채 우리는 무사히 도망쳤지만, 그 순간의 긴장과 위험은 아직도 잊을 수 없다.
+                </p>
+            </div>
+        </div>
+        <div class="right-content" style="position: relative; top: 250px;">
+            
+            <div class="image-container1" style="width: 50%;">
+                <img class="subway-image" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNoNWY1NGZ2OTA2ZDl1ZTVrNXZyNG05cHE0czRpcThldW5jcHpkdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8uFI1jT29axlC/giphy.gif" alt="Image 2 ">
+            </div>
+            <div class="image-container1" style="width: 120%;">
+                <img class="subway-image" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNoNWY1NGZ2OTA2ZDl1ZTVrNXZyNG05cHE0czRpcThldW5jcHpkdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8uFI1jT29axlC/giphy.gif" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="black" id="snowman">
+    <div style="display: flex; justify-content: space-between;padding-top: 200px;padding-bottom: 0">
+        <h2 style="padding-left: 100px;color: white;">
+            사람실격! 눈사람 합격!
+        </h2>
+        <div style="position: relative;">
+            <h2 style="padding-right: 100px;color: white;"> 
+                snowman 
+            </h2>
+            <hr style="border: none; border-top: 5px solid white; position: absolute; top: 90%; left: 50%; transform: translateX(-92%); width: calc(320%)">
+        </div> 
+    </div>
+    <div style="display: flex; justify-content: center;padding-top: 100px;">
+        <img src="snow.gif"style="width: 40%; height: 40%;">
+    </div>
+</section>
+
+
+</section>
+<section class="snow" style="padding-top: 200px;padding-bottom: 0">
+    <div style="padding-left: 50vw;">
+        <div class="right-spacing">
+            <div class="FRAME-3" style="background: white;">
+                <span class="TEXT-4" style="color:black;">
+                    눈과 함께 낙오되기
+                </span>
+            </div>
+            <p class="right-spacing" style="color: white;"> 
+                작년 한 겨울 아침, 폭설,한파특보에 눈을 뜬 나는 창밖으로 못 보던 규모의 눈이 하늘에서 쏟아지는 것을 보고 나는 입이 다물어지지 않았다. 그러나 나는 이번 여행의 목표인 시라카와고를 가기 위해 거침없이 밖으로 나왔다.  쉴 틈도 없이 계속 내리는 눈 덕에 나는 눈을 뜨기 힘들어 검정색 선글라스를 끼고 전망대를 오르기로 마음을 먹었다. 전망대까지의 셔틀 버스는 미치게 내리는 눈 때문에 취소되었고 나는 결국 전망대까지 걸어서 올라갈 수 밖에 없게 되었다. 전망대로 향하는 도중, 날씨는 점점 더 악화되어갔다. 이 때 다시 한 번 생각해보았어야 했다. 왜 셔틀버스가 취소되었는지를…… 그때까지는 단지 눈으로 가득한 온세상을 한 눈에 담을 생각 뿐이었다.<br>
+                <div> </div></p>
+                    <h3 style="color: white;"> 젠장!!!!!!!!!!!!</h3> 
+               <p class="right-spacing" style="color: white;">
+            그러던 그 때 갑자기 큰 나무에서 눈이 쏟아져 내렸다. 
+            나는 당황해서 옆으로 넘어졌고,  눈을 뜨고 나니 눈더미에 반쯤 묻혀 세상과 고립되었다. 처음에는 나에게 무슨 일이 일어났는지 얼떨떨 했다. 내가 살아서 한국에 갈 수 있을까? 이대로 얼어죽는건가? 그동안 착하게 살걸…. 
+            그렇게 불안해하면서 오만가지 생각들을 하다 오면서 버스에서 본 눈사태 대처요령이 생각났다.</p>
+            </p></div>
+    <img src="white.png" style="padding-top: 800px; ; top: 0%; left: 90%; transform: translate(-50%, -50%); z-index: 1;">
+    <h4 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+        당신도 눈사태에서 살아남을 수 있다!<br><br>
+        <li> 소리 질러라.<br> </li>
+        <li>동행자에게 자기 위치를 알려라.<br></li>
+        <li> 눈이 덮인다면 몸을 엎드리고 얼굴을 보호해라.<br></li>
+        <li> 눈더미 옆방향으로 빠져나와라.<br></li>
+        <li>못 빠져나올 것 같으면, 장비를 버려라.<br></li>
+        <li>숨쉴 수 있게 도와주는 장비를 착용하라. <br></li>
+        <li>눈사태용 풍선,마우스피스 등이 없으면 얼굴을 옷으로 덮어라.<br><br></li>
+    </h4></div><div style="padding-left:12vw;padding-right:50vw;">
+    <div class="FRAME-4" style="background: white;">
+            <span class="TEXT-5" style="color:black;">
+                눈사람에서 사람으로
+            </span></div>
+            <p style="color: white;padding-bottom: 200px;">
+                나는 미친듯이 소리를 치면서 눈더미에 벗어나려 묻힌 다리를 마구 움직였고, 다행히 눈더미에서 빠져나올 수 있었다. 하지만 나에게 닥친 시련은 이게 끝이 아니었다. 눈 속에 있던 탓에 냉동고에 갇힌 사람마냥 몸이 얼어붙었고, 가방이고 신발이고 전신이 얼음으로 뒤덮여 있었다. 설상가상으로 미치도록 내린 눈들이 표지판들을 가려버려 나는 산 중턱에서 홀로 방향을 잃었다… 
+                나는 결국 목표하던 전망대는 포기하고 올라온 길을 따라 내려오면서 눈으로 인해 가려진 땅들을 찾기 위해 손과 발 모두 사용해서 눈썰매를 타듯이 네발로 내려왔다. 무슨 눈사람같은 몰골로 다시금 전망대 출발지에 도착하게 되었고, 출발지에는 나처럼 눈사람이 된 사람 투성이였다. 그 때서야 나의 몰골을 깨달은 나는 출발지에 있던 볏짚 빗자루를 이용해 몸을 퍽퍽 털어냈다. 그렇게 눈을 털고 난 후 나는 근처 카페에 들어가 몸을 녹이며 다시금 눈사람이 아닌 사람으로 돌아오게 되었다. 
+                그리고 다시는 폭설 주의보 때 집밖을 나가지 않기로 다짐했다.  </p></div></div>
+</section>
+
+
+
+
+
+
+    <section id="poor" style="display: flex; justify-content: space-between;padding-top: 200px;">
+    <h2 style="padding-left: 100px;">
+        눈 떴더니 모든 것을 빼앗겼다
+    </h2>
+    <div style="position: relative;">
+        <h2 style="padding-right: 100px;"> 
+            poor
+        </h2>
+        <hr style="border: none; border-top: 5px solid black; position: absolute; top: 100%; left: 50%; transform: translateX(-99%); width: calc(917% - 1000px);">
+        <img src="poor.gif" style="position: absolute; top: calc(100% + 100px); left: -200%; transform: translateX(-50%); padding-bottom: 200px; width: 250%; height: 300%;">
+
+
+    </div></section>
+    <section  style="padding-top: 500px;">
+         <div class="right-spacing" style="padding-left:12vw;padding-right: 30vw;">
+        <div class="FRAME-2">
+  <span class="TEXT-2">
+    젤라또에 한눈팔면 생기는 일
+  </span>
+</div>
+        <p> 
+            유럽하면 가장 먼저 생각나는 것은 아무래도 멋진 풍경이지 않을까. 그런 멋진 풍경을 꿈꾸고 있는 당신에게 행복한 여행이 되려면 이 사실은 꼭 알고 있어야 한다. <br> 중학생 때 가족들과 이탈리아로 여행을 떠났다. 피렌체에서 베네치아로 이동하기 전, 두오모 광장에서 언니와 나는 젤라또가 먹고 싶어 부모님 곁에서 벗어나 젤라또 가게를 향해 가고 있었다. 아무래도 이탈리아에 왔으면 꼭 젤라또를 먹어봐야 한다고 생각했고, 이탈리아 다녀온 이모가 아이스크림을 싫어하는 사람마저 사랑할 수밖에 없는 맛이라 극찬을 했기에 들뜬 마음으로 젤라또 가게를 찾아다녔다. 광장에는 사람이 많았고, 두오모 성당 바로 앞에 있는 젤라또 가게에는 사람이 너무 많아 구글 평점이 높은 젤라또 가게로 가기 위해 우리는 골목으로 들어갔다.</p></div>
+            <h5 style= "padding-left: 30vw; padding-right: 12vw;text-align: right;"> 이 때 이 골목으로<br> 들어가지 말았어야 했다…..</h5><br><p style= "padding-left: 40vw; padding-right: 12vw;padding-top: -100px;"> 
+            신나게 젤라또 가게를 향해 걸어가던 우리는 뒤쪽에서 갑자기 내 가방을 잡아 끄는 손길을 느꼈다. 그리고 갑자기 어디선가 4명의 사람들이 뛰어오더니 내 몸을 누르고 우리의 가방과 외투를 벗겼다. 나름 저항을 하긴 했지만, 정신을 차리자 그들의 유일한 자비인 핸드폰만을 손에 꼭 쥔 채 빈털터리가 되었다..
+            이 때의 경험으로 이 뒤로는 소매치기를 당하지 않게 되었다.<br><br> </p></div>
+            <div class="image-container" style="position: relative;">
+            <img src="black.png" alt="black">
+            <h4 style="position: absolute; bottom: 340px; left: 50%; transform: translateX(-60%); padding: 10px;color: white;">
+                <ul class="do"><span class="underline">당신이 유럽을 가게 된다면 꼭 이것만은 지켜라.</span> <br><br>
+                <li> 패션에 눈멀어 가방이 제대로 닫히지도 않는 것 매지 않기. </li>
+                <li> 낯선 타인의 갑작스런 호의는 무시하기</li>
+                <li> 관광객 티 덜내기. 최대한 현지인처럼 다니기.</li>
+                <li> 돈 신발, 주머니 곳곳에 숨겨두고 카드는 하루에 쓸 돈만 빼놓기.</li>
+            </h4>
+        </div>
+    </div></section>
+
+<script type="text/javascript">
+        // 페이지가 로드될 때마다 스크롤을 페이지의 최상단으로 이동
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+
+        // 네비게이션 링크를 클릭할 때 부드러운 스크롤 효과를 추가
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+<footer style="background: gray;padding-top:50px;padding-left:12vw;padding-right: 12vw;padding-bottom: 200px;"><div style="display: flex; justify-content: space-between;">
+        <div>
+            세상에 이런일이!&copy;<br>2024 안시언 
+        </div>
+        <div>
+            instagram<br>@_0sie0n_studio 
+        </div>
+        <div>behance<br>
+            <a href="https://www.behance.net/AhnSieon">https://www.behance.net/AhnSieon</a>
+        </div>
+    </div>
+</footer>
+</html>
